@@ -15,9 +15,8 @@
               ])
         ```
 2. Restore saveory data to your database
-  - Get the saveory_setup_db.zip
-  - run `unzip saveory_setup_db.zip`
-  - run `mongorestore --host <MONGO_HOST> --username <USER_NAME> --password <USER_PASS> --db <DB_NAME> --authenticationDatabase admin saveory_setup_db`
+  - Get the `saveory-recipes-backup` folder
+  - Run `mongorestore --host <MONGO_HOST> --username <USER_NAME> --password <USER_PASS> --db <DB_NAME> --authenticationDatabase admin saveory-recipes-backup`
   - There should be an output line that appears as follows
     ```
       finished restoring <DB_NAME>.recipes (911 documents)
